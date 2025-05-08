@@ -1,61 +1,85 @@
-
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AutoTube - YouTube İçerik Otomasyonu</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    input[type="email"] {
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.75rem 1rem;
+      background: #00c6ff;
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <header class="bg-white shadow">
-    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-600">AutoTube</h1>
-      <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">Erken Erişim</a>
-    </div>
-  </header>
-
-  <section class="text-center py-16 px-4">
-    <h2 class="text-4xl font-bold mb-4">YouTube Videonu Sen Üretme, Biz Hallederiz.</h2>
-    <p class="text-lg mb-6 max-w-xl mx-auto">Fikrinden yola çıkarak otomatik olarak video üretiriz. Seslendirme, görsel, montaj ve yükleme... Hepsi bizden.</p>
-    <a href="#form" class="bg-blue-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-700">Erken Erişim Talep Et</a>
-  </section>
-
-  <section class="max-w-4xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div>
-      <h3 class="text-2xl font-semibold mb-4">Öne Çıkan Özellikler</h3>
-      <ul class="list-disc pl-5 space-y-2">
-        <li>GPT ile otomatik senaryo üretimi</li>
-        <li>Doğal yapay zeka seslendirme</li>
-        <li>Stok görsel/video ile montaj</li>
-        <li>Altyazı ve kanal branding desteği</li>
-        <li>Doğrudan YouTube'a otomatik yükleme</li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="text-2xl font-semibold mb-4">Nasıl Çalışır?</h3>
-      <ol class="list-decimal pl-5 space-y-2">
-        <li>Fikrini gir</li>
-        <li>Ses tonunu ve stilini seç</li>
-        <li>"Oluştur" tuşuna bas</li>
-        <li>Video otomatik olarak YouTube'a yüklensin!</li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="form" class="bg-blue-50 py-12">
-    <div class="max-w-lg mx-auto text-center">
-      <h3 class="text-2xl font-bold mb-4">AutoTube'a Erken Erişim Talep Et</h3>
-      <p class="mb-6">Lansman öncesi ilk davetiyeyi alanlardan biri ol. Sadece e-mailini bırak:</p>
-      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
-        <input type="email" name="email" placeholder="E-posta adresin" required class="w-full px-4 py-2 border rounded-xl">
-        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700">Gönder</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="text-center text-sm text-gray-500 py-6">
-    &copy; 2025 AutoTube. Tüm hakları saklıdır.
-  </footer>
+<body>
+  <h1>AutoTube 🚀</h1>
+  <p>Sen sadece izle, YouTube videolarını AutoTube senin yerine yapsın!</p>
+  <form action="https://formspree.io/f/xxxxyyyy" method="POST">
+    <input type="email" name="email" placeholder="E-posta adresin" required />
+    <button type="submit">Erken Erişim Talep Et</button>
+  </form>
 </body>
 </html>
