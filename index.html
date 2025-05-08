@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AutoTube - YouTube İçerik Otomasyonu</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
@@ -14,14 +15,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       padding: 2rem;
-      min-height: 100vh;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.8rem;
+      margin: 1rem 0 0.5rem;
     }
 
     p {
@@ -37,6 +36,7 @@
       gap: 1rem;
       width: 100%;
       max-width: 400px;
+      margin-bottom: 3rem;
     }
 
     input[type="email"] {
@@ -48,7 +48,6 @@
 
     button {
       padding: 0.75rem 1rem;
-      background: #00c6ff;
       background: linear-gradient(to right, #0072ff, #00c6ff);
       color: white;
       border: none;
@@ -61,6 +60,52 @@
     button:hover {
       transform: scale(1.03);
       box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .feature-box {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-box i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00c6ff;
+    }
+
+    .testimonials {
+      max-width: 800px;
+      margin-top: 3rem;
+    }
+
+    .testimonial {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial span {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #ccc;
     }
 
     @media (max-width: 500px) {
@@ -76,10 +121,40 @@
 </head>
 <body>
   <h1>AutoTube 🚀</h1>
-  <p>Sen sadece izle, YouTube videolarını AutoTube senin yerine yapsın!</p>
+  <p>Sen sadece izle, YouTube videolarını AutoTube senin yerine hazırlasın!</p>
   <form action="https://formspree.io/f/xxxxyyyy" method="POST">
     <input type="email" name="email" placeholder="E-posta adresin" required />
     <button type="submit">Erken Erişim Talep Et</button>
   </form>
+
+  <div class="features">
+    <div class="feature-box">
+      <i class="fas fa-robot"></i>
+      <h3>Yapay Zeka Desteği</h3>
+      <p>Senaryo yazımı, seslendirme ve video oluşturma %100 otomatik!</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-clock"></i>
+      <h3>24/7 Otomasyon</h3>
+      <p>Sen uyurken bile içerik üretmeye devam eder.</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-chart-line"></i>
+      <h3>Analiz ve Raporlama</h3>
+      <p>İzlenme, tıklama ve abone verilerini takip et.</p>
+    </div>
+  </div>
+
+  <div class="testimonials">
+    <h2>Kullanıcılar Ne Diyor?</h2>
+    <div class="testimonial">
+      "AutoTube sayesinde 1 ayda 10K aboneye ulaştım. Oturduğum yerden kanalım büyüyor!"
+      <span>— Cem K., YouTube İçerik Üreticisi</span>
+    </div>
+    <div class="testimonial">
+      "Eskiden 1 video 3 saat sürerdi. Şimdi günde 5 video çıkarıyorum. Harika!"
+      <span>— Ayşe T., Eğitim Kanalı Kurucusu</span>
+    </div>
+  </div>
 </body>
 </html>
