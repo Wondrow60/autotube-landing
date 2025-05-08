@@ -108,14 +108,30 @@
       color: #ccc;
     }
 
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 2rem;
-      }
+    .how-it-works, .demo {
+      max-width: 900px;
+      margin-top: 4rem;
+      text-align: center;
+    }
 
-      p {
-        font-size: 1rem;
-      }
+    .how-it-works h2, .demo h2 {
+      margin-bottom: 1rem;
+    }
+
+    .footer {
+      margin-top: 5rem;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    iframe {
+      border-radius: 10px;
+      margin-top: 1rem;
+      width: 100%;
+      max-width: 640px;
+      height: 360px;
     }
   </style>
 </head>
@@ -145,6 +161,24 @@
     </div>
   </div>
 
+  <div class="demo">
+    <h2>🎬 Örnek Video</h2>
+    <p>Aşağıdaki video AutoTube tarafından otomatik olarak üretildi.</p>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  </div>
+
+  <div class="how-it-works">
+    <h2>📌 Nasıl Çalışır?</h2>
+    <p>AutoTube şu adımlarla içerik üretir:</p>
+    <ul style="text-align: left; max-width: 700px; margin: 1rem auto; line-height: 1.6;">
+      <li><strong>1.</strong> Konu belirlenir ve başlık oluşturulur</li>
+      <li><strong>2.</strong> GPT ile senaryo yazılır</li>
+      <li><strong>3.</strong> Metin otomatik seslendirilir</li>
+      <li><strong>4.</strong> Görsellerle birlikte video haline getirilir</li>
+      <li><strong>5.</strong> YouTube’a otomatik yüklenir</li>
+    </ul>
+  </div>
+
   <div class="testimonials">
     <h2>Kullanıcılar Ne Diyor?</h2>
     <div class="testimonial">
@@ -155,6 +189,10 @@
       "Eskiden 1 video 3 saat sürerdi. Şimdi günde 5 video çıkarıyorum. Harika!"
       <span>— Ayşe T., Eğitim Kanalı Kurucusu</span>
     </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 AutoTube. Tüm hakları saklıdır. | <a href="#" style="color:#ccc; text-decoration: underline;">Gizlilik Politikası</a></p>
   </div>
 </body>
 </html>
